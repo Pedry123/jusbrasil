@@ -1,0 +1,29 @@
+# Controle de versão e ambientes locais
+.git/
+.venv/
+venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Dados brutos usados somente para reconstruir o dataset
+dataset_compartilhado/
+dataset_compartilhado.zip
+dataset.xlsx
+desafio1_bracis.db
+goldenset_offsets.csv
+txt/
+txt-*.zip
+
+# Modelos e saídas locais; o Docker treina e cria os artefatos durante o build
+
+data/*
+!data/merged_citacoes.parquet
+!data/canonical_base.parquet
+
+# Artefatos de execução, avaliação e desenvolvimento
+
+*.json
+*.csv
+*.log
+.coverage

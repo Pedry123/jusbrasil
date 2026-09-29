@@ -1,0 +1,11 @@
+torch
+sentence-transformers
+transformers
+faiss-cpu
+pandas
+pyarrow
+openpyxl
+numpy
+streamlit
+scikit-learn
+kagglehub
