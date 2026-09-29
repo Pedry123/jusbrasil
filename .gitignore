@@ -1,0 +1,31 @@
+# Ambiente Python e arquivos temporários
+.venv/
+venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.log
+.coverage
+.DS_Store
+
+# Documentação: manter apenas o guia principal do repositório
+
+
+# Modelos e índices são gerados pelo treinamento
+/desafio-jusbrasil-bracis-2026/models/
+
+# Bases e corpora brutos grandes
+/desafio-jusbrasil-bracis-2026/dataset_compartilhado/
+/desafio-jusbrasil-bracis-2026/dataset_compartilhado.zip
+/desafio-jusbrasil-bracis-2026/dataset.xlsx
+/desafio-jusbrasil-bracis-2026/desafio1_bracis.db
+/desafio-jusbrasil-bracis-2026/goldenset_offsets.csv
+/desafio-jusbrasil-bracis-2026/txt/
+/desafio-jusbrasil-bracis-2026/txt-*.zip
+
+# Resultados e intermediários; manter os Parquet necessários ao build Docker
+/desafio-jusbrasil-bracis-2026/data/*
+!/desafio-jusbrasil-bracis-2026/data/merged_citacoes.parquet
+!/desafio-jusbrasil-bracis-2026/data/canonical_base.parquet
+/desafio-jusbrasil-bracis-2026/submission.csv
+/desafio-jusbrasil-bracis-2026/gen_n2_006.json

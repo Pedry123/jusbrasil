@@ -10,7 +10,7 @@ WORKDIR /app
 # dependências: torch CPU (índice pytorch) + demais pacotes
 COPY requirements.txt .
 RUN pip install --upgrade pip \
- && pip install torch --index-url https://download.pytorch.org/whl/cpu \
+ && pip install torch==2.14.0 --index-url https://download.pytorch.org/whl/cpu \
  && pip install -r requirements.txt
 
 # código e dados (base canônica + citações mescladas já geradas)
